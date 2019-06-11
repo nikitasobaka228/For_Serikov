@@ -1,0 +1,41 @@
+def lred():
+    l1['bg']='#ff0000'
+    l1['text']="Красный"
+def lblue():
+    l1['bg']='#0000ff'
+    l1['text']="Синий"
+def lyell():
+    l1['bg']='#ffff00'
+    l1['text']="Желтый"
+def lgol():
+    l1['bg']='#007dff'
+    l1['text']="Голубой"
+def lora():
+    l1['bg']='#ff7d00'
+    l1['text']="Оранжевый"
+def lgree():
+    l1['bg']='#00ff00'
+    l1['text']="Зеленый"
+def lpurp():
+    l1['bg']='#7d00ff'
+    l1['text']="Фиолетовый"
+from tkinter import *
+root=Tk()
+root.title('радуга')
+but = Button(root, text='Красный',bg='#ff0000',command=lred,width=20)
+but.pack(side=TOP)
+but2 = Button(root, text='Оранжевый',bg='#ff7d00',command=lora,width=20)
+but2.pack(side=TOP)
+but3=Button(root,text='Желтый',bg='#ffff00',command=lyell,width=20)
+but3.pack(side=TOP)
+but4=Button(root,text='Зеленый',bg='#00ff00',command=lgree,width=20)
+but4.pack(side=TOP)
+but5=Button(root,text='Голубой',bg='#007dff',command=lgol,width=20)
+but5.pack(side=TOP)
+but6 = Button(root, text='Синий',bg='#0000ff',command=lblue,width=20)
+but6.pack(side=TOP)
+but7=Button(root,text='Фиолетовый',bg='#7d00ff',command=lpurp,width=20)
+but7.pack(side=TOP)
+
+lab1 = Label(root,text='Color',width=20,font="Arial 18")
+lab1.pack(side=LEFT)
